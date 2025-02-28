@@ -8,8 +8,8 @@ import {
   SpeakerWaveIcon,
   ArrowPathIcon,
 } from "@heroicons/react/24/solid";
-import music from "/music.jpg"
-import music1 from "/music1.jpg"
+import music from "/music.jpg";
+import music1 from "/music1.jpg";
 
 function MusicPlayer() {
   const audioRef = useRef(null);
@@ -79,7 +79,14 @@ function MusicPlayer() {
   const handleSeek = (e) => {
     const rect = progressBarRef.current.getBoundingClientRect();
     const seekPosition = (e.clientX - rect.left) / rect.width;
-    audioRef.current.currentTime = seekPosition * audioRef.current.duration;
+    const newTime = seekPosition * audioRef.current.duration;
+
+    // Update audio position immediately
+    audioRef.current.currentTime = newTime;
+
+    // Manually update progress and time display
+    setProgress((newTime / audioRef.current.duration) * 100);
+    setCurrentTime(formatTime(newTime));
   };
 
   const handleSkip = (direction) => {

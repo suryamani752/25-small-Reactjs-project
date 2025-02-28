@@ -69,4 +69,59 @@ export const ProjectData = [
     name: "Image Slider",
     path: "/image-slider",
   },
+  {
+    id: 15,
+    name: "Filter Products",
+    path: "/filter-product",
+  },
+  {
+    id: 16,
+    name: "Tool Tip",
+    path: "/tool-tip",
+  },
+  {
+    id: 17,
+    name: "Quiz App",
+    path: "/quiz",
+  },
+  {
+    id: 18,
+    name: "Form Validation",
+    path: "/form-validation",
+  },
+  {
+    id: 19,
+    name: "onBoarda",
+    path: "/on-boarda",
+  },
+  {
+    id: 20,
+    name: "Leaderboard",
+    path: "/leaderboard",
+  },
+  {
+    id: 21,
+    name: "DIY Recipes",
+    path: "/diy-recipe",
+  },
+  {
+    id: 22,
+    name: "PET Adoption",
+    path: "/pet-adopt",
+  },
+  {
+    id: 23,
+    name: "Public Restrooom Finder",
+    path: "/public-restroom",
+  },
+  {
+    id: 24,
+    name: "Street Food Finder",
+    path: "/street-food",
+  },
+  {
+    id: 25,
+    name: "Community Swap Market",
+    path: "/swap-market",
+  },
 ];

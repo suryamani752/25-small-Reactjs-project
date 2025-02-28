@@ -22,6 +22,17 @@ import PdfViewer from "./25-Projects/11-pdf-veiwer";
 import Accordion from "./25-Projects/12-accordian";
 import MusicPlayer from "./25-Projects/13-music-player";
 import ImageSlider from "./25-Projects/14-image-slider";
+import FilterProducts from "./25-Projects/15-filter-products";
+import ToolTip from "./25-Projects/16-tooltip";
+import QuizApp from "./25-Projects/17-quiz-app";
+import FormValidation from "./25-Projects/18-form-validation";
+import OnBoarda from "./25-Projects/19. onBorda";
+import LeaderBoard from "./25-Projects/20-leaderboard";
+import DIYRecipe from "./25-Projects/21-DIY-recipe";
+import PetAdoption from "./25-Projects/22-pet-adoption";
+import PublicRestroomFinder from "./25-Projects/23-public-restroom-finder";
+import StreetFoodTracker from "./25-Projects/24-street-food-tracker";
+import CommunitySwap from "./25-Projects/25-swap-market";
 
 function CustomRoutes() {
   const [currentStep, setCurrentStep] = useState(0);
@@ -177,12 +188,56 @@ function CustomRoutes() {
     },
     {
       path: "/music-player",
-      element: <MusicPlayer />
+      element: <MusicPlayer />,
     },
     {
       path: "/image-slider",
-      element: <ImageSlider />
-    }
+      element: <ImageSlider />,
+    },
+    {
+      path: "/filter-product",
+      element: <FilterProducts />,
+    },
+    {
+      path: "/tool-tip",
+      element: <ToolTip />,
+    },
+    {
+      path: "/quiz",
+      element: <QuizApp />,
+    },
+    {
+      path: "/form-validation",
+      element: <FormValidation />,
+    },
+    {
+      path: "/on-boarda",
+      element: <OnBoarda />,
+    },
+    {
+      path: "/leaderboard",
+      element: <LeaderBoard />,
+    },
+    {
+      path: "/diy-recipe/*",
+      element: <DIYRecipe />,
+    },
+    {
+      path: "/pet-adopt",
+      element: <PetAdoption />,
+    },
+    {
+      path: "/public-restroom",
+      element: <PublicRestroomFinder />,
+    },
+    {
+      path: "/street-food",
+      element: <StreetFoodTracker />,
+    },
+    {
+      path: "/swap-market",
+      element: <CommunitySwap />,
+    },
   ]);
 
   return elements;
